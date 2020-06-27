@@ -41,12 +41,12 @@ def test_create_money():
 
 def test_dollar_to_str():
     one_dollar = Money(1, USD)
-    assert one_dollar == "$1.00"
+    assert str(one_dollar) == "$1.00"
 
 
 def test_dinar_to_str():
     dinar = Money(7.5, BHD)
-    assert dinar == "BHD 7.500"
+    assert str(dinar) == "BHD 7.500"
 
 
 def test_money_equality():
