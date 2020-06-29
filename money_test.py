@@ -39,7 +39,7 @@ def test_create_money():
     assert one_dollar.currency == USD
 
 
-def test_dollars_to_str():
+def test_dollar_to_str():
     one_dollar = Money(1, USD)
     assert str(one_dollar) == "$1.00"
 
